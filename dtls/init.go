@@ -11,6 +11,7 @@ var (
 	ServerCertificateFingerprint string
 )
 
+// export Init
 func Init() {
 	//logging.Infof(logging.ProtoDTLS, "Initializing self signed certificate for server...")
 	_, err, _ := GenerateServerCertificate("localhost")
